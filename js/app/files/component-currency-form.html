@@ -1,0 +1,14 @@
+<div class="input-group">
+    <input class="form-control" type="text" data-bind="value: formatPrice, keyup:'valueUpdate'" />
+    <div class="input-group-prepend">
+        <span class="input-group-text">=</span>
+    </div>
+    <input type="text" disabled class="form-control" data-bind="fadeVisible: priceConvert, value: priceConvert" />
+    <select class="custom-select" data-bind="options: currencyExchange,
+                        optionsText: 'unit',
+                        optionsValue: 'unit',
+                        optionsCaption: 'Choose one...',
+                        value: selectedCurrency"></select>
+</div>
+
+<!--<span data-bind="text: price"></span>-->

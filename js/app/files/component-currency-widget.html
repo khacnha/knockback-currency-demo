@@ -1,0 +1,16 @@
+<div class="card text-center">
+    <div class="card-header text-center">
+        <button class="btn btn-outline-success btn-sm" data-bind="text:isFormShower() ? 'Off' : 'On', click: onOffFormShower"></button> Currency Convert
+    </div>
+    <div class="card-body">
+        <!-- ko if: isFormShower -->
+            <!-- ko component: {
+                name: "currency-form"
+            } -->
+            <!-- /ko -->
+        <!-- /ko -->
+        <!-- ko ifnot: isFormShower -->
+        <p class="text-center">Click <b>On/Off</b> Currency Convert</p>
+        <!-- /ko -->
+    </div>
+</div>
